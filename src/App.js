@@ -4,39 +4,28 @@ import Button from "./components/Button";
 import { Container, Content, Column, Row } from "./styles";
 import { useState } from "react";
 
-
-
 const App = () => {
-  const [currentNumber, setCurrentnumber] = useState('0');
+  const [currentNumber, setCurrentNumber] = useState('0');
   const [firstNumber, setFirstNumber] = useState('0');
 
-  const handleClear = () => {    // Limpa o visor da calculadora
-    setCurrentnumber ('0');
-  }
+  const handleOnClear = () => {    // Limpa o visor da calculadora
+    setCurrentNumber('0')
+  };
 
   const handleAddNumber = (num) => {  // Adiciona os valores a cada botão
-    setCurrentnumber(prev => `${num}${prev === '0' ? '' : prev}`)
+    setCurrentNumber(prev => `${prev === '0' ? '' : prev}${num}`)
   }
 
-  const handleSumNumbers = () => {
-    if (firstNumber === '0') {
-      setCurrentnumber(currentNumber);
-      handleClear();
-    } else {
-      const sum = Number(firstNumber) + Number(currentNumber);
-      setCurrentnumber(String(sum))
-    }
-  }
 
   return (
     <Container>
       <Content>
         <Input value={currentNumber} />
         <Row >
-          <Button variant="secundary" label={"C"} onClick={() => handleClear()}/>
+          <Button variant="secundary" label={"C"} onClick={handleOnClear}/>
           <Button variant="secundary" label={"^"} onClick={() => handleAddNumber('')}/>
           <Button variant="secundary" label={"%"} onClick={() => handleAddNumber('')}/>
-          <Button variant="secundary" label={"+"} onClick={handleSumNumbers}/>
+          <Button variant="secundary" label={"+"} />
         </Row>
         <Row>
           <Button label={"7"} onClick={() => handleAddNumber('7')}/>
