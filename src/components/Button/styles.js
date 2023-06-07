@@ -17,7 +17,7 @@ export const ButtonContainer = styled.button`
       background-color: #c56565;
       font-size: 31px;
       font-weight: 900;
-      min-width: 197px;
+      width: 160px;
       border: 1px solid #444;
     `}
 

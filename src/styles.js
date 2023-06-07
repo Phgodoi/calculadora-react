@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   
-  background-color: #fff;
+  background-color: #B0C4DE ;
 
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  min-width: 10%;
+  width: 320px;
   min-height: 350px;
 
   background-color: black;
