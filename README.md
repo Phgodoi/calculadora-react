@@ -11,8 +11,3 @@ Neste projeto, foram abordados os seguintes conceitos:
 3. Principais conceitos de React.
 
 Durante o desenvolvimento, pude aplicar esses conceitos e aprofundar meu entendimento sobre o React, sua estrutura de componentes e sua capacidade de criar interfaces interativas e reativas.
-
-
--------
-
-
