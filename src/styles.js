@@ -19,7 +19,6 @@ export const Content = styled.div`
   border-radius: 7px;
   border: 5px solid black;
   box-sizing: content-box;
-
 `;
 
 export const Row = styled.div`
